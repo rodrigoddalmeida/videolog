@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "videolog"
   gem.homepage = "http://github.com/rodrigoddalmeida/videolog"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "A Ruby interface to the Videolog API"
+  gem.description = "This gem makes it easy to integrate Videolog with Ruby projects."
   gem.email = "rodrigoddalmeida@gmail.com"
   gem.authors = ["Rodrigo DeAlmeida"]
   # dependencies defined in Gemfile
@@ -28,16 +28,8 @@ Jeweler::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'test/**/*_test.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test

@@ -1,6 +1,6 @@
 = videolog
 
-Description goes here.
+A Ruby interface to the Videolog API.
 
 == Contributing to videolog
  
