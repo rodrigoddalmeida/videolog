@@ -1,0 +1,23 @@
+{
+  "video":{
+    "ordem":2829,
+    "id_canal":11,
+    "thumb":"http://videolog.tv/video_thumb.php?video=715519",
+    "mobile":"S",
+    "url_mp4":"http://videos.videolog.tv/98/96/715519.mp4?epochTTL=9981044395200&token=033446ee7ce7954da848da6d75cf6f2b&ri=10485760&rs=600",
+    "duracao":"00:03:33",
+    "uri":"/video/715519.json",
+    "uri_videos_relacionados":"/video/715519/videosRelacionados.json",
+    "texto":"Rick Astley - Never Gonna Give You Up",
+    "visitas":0,
+    "sinc":3,
+    "usuario_id":681142,
+    "criacao":"2011-11-01T10:37:34",
+    "link":"http://videolog.tv/video.php?id=715519",
+    "privacidade":"0",
+    "titulo":"Rick Astley - Never Gonna Give You Up",
+    "embed":"                 <iframe width='560' height=315 src='http://embed.videolog.tv/v/index.php?id_video=715519&width=560&height=315&config_url=' scrolling='no' frameborder='0' allowfullscreen></iframe>                 <p><a href='http://videolog.tv/video.php?id=715519'>Rick Astley - Never Gonna Give You Up</a> por <a href='http://videolog.tv/amandoledonne'> amandoledonne </a> no <a href='http://videolog.tv'>Videolog.tv</a>.</p>               ",
+    "uri_comentarios":"/video/715519/comentarios.json",
+    "id":715519
+  }
+}

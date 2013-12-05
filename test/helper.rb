@@ -29,18 +29,18 @@ def videolog_api_url(path = "")
   "#{Videolog::Base::ENDPOINT}#{path}"
 end
 
-def stub_api_request(url, return_filename, request_options=nil, content_type='application/json', status=200, method=:get)
+def stub_api_request(url, return_filename, request_options={}, content_type='application/json', status=200, method=:get)
   options = { :body => fixture_file(return_filename) }
   options.merge!({:headers => { 'Content-Type' => content_type }})
   options.merge!({:status => status})
   stub_request(method, videolog_api_url(url)).with(request_options).to_return(options)
 end
 
-def stub_api_get(url, return_filename, request_options=nil, content_type='application/json', status=nil)
+def stub_api_get(url, return_filename, request_options={}, content_type='application/json', status=nil)
   stub_api_request(url, return_filename, request_options, content_type, status)
 end
 
-def stub_api_post(url, return_filename, request_options=nil, content_type='application/json', status=nil)
+def stub_api_post(url, return_filename, request_options={}, content_type='application/json', status=nil)
   stub_api_request(url, return_filename, request_options, content_type, status, :post)
 end
 
