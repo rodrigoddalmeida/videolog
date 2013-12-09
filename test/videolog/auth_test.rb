@@ -4,6 +4,15 @@ class AuthTest < Test::Unit::TestCase
 
   context "videolog auth" do
 
+    context ".new" do
+      should "initialize with the provided options" do
+        base = Videolog::Auth.new(auth_hash: '1234567890', dev_token: 'ABCDEF')
+
+        assert_equal '1234567890', base.auth_hash
+        assert_equal 'ABCDEF', base.dev_token
+      end
+    end
+
     context ".get_auth_hash" do
 
       should "retrieve and return an auth hash" do

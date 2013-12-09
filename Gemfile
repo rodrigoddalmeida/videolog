@@ -2,7 +2,6 @@ source "http://rubygems.org"
 
 gem "httparty"
 gem "json"
-gem "virtus"
 
 group :development, :test do
   gem "shoulda"

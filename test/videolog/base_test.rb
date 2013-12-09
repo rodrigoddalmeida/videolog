@@ -21,5 +21,30 @@ class BaseTest < Test::Unit::TestCase
         end
       end
     end
+
+    context "authorization" do
+
+      context "#authorize" do
+        should "not be authorized when no auth info is provided" do
+          base = Videolog::Base.new
+
+          assert_equal false, base.authorized
+        end
+
+        should "be authorized when no auth info is provided" do
+          base = Videolog::Base.new(dev_token: '12345678')
+
+          assert_equal true, base.authorized
+        end
+      end
+
+      context "#authorize!" do
+        should "raise error" do
+          assert_raise Videolog::AuthorizationNeeded do
+            Videolog::Base.new.authorize!
+          end
+        end
+      end
+    end
   end
 end
