@@ -38,7 +38,8 @@ Gem::Specification.new do |s|
     "test/videolog/auth_test.rb",
     "test/videolog/base_test.rb",
     "test/videolog/video_test.rb",
-    "test/videolog_test.rb"
+    "test/videolog_test.rb",
+    "videolog.gemspec"
   ]
   s.homepage = "http://github.com/rodrigoddalmeida/videolog"
   s.licenses = ["MIT"]
