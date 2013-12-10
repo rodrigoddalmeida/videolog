@@ -2,6 +2,12 @@
 
 A Ruby interface to the Videolog API.
 
+== Usage examples
+
+    # To find a cool video, by id.
+    video = Videolog::Video.new
+    video.find(715519)
+
 == Contributing to videolog
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
